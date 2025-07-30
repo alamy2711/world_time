@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter/services.dart';
+
+
 class About extends StatelessWidget {
   const About({Key? key}) : super(key: key);
 
@@ -29,14 +32,10 @@ class About extends StatelessWidget {
               width: 100,
               height: 100,
               decoration: BoxDecoration(
-                color: Colors.blue.withOpacity(0.2),
+                color: Colors.blue.withOpacity(0.1),
                 borderRadius: BorderRadius.circular(20),
               ),
-              child: const Icon(
-                Icons.public,
-                size: 60,
-                color: Colors.blue,
-              ),
+              child: Image.asset('assets/images/world_time.png',),
             ),
             const SizedBox(height: 30),
             // App name
@@ -75,13 +74,27 @@ class About extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            // GitHub/GitLab link placeholder
+            // GitHub link placeholder
             ListTile(
               leading: const Icon(Icons.code),
               title: const Text('View source code'),
-              onTap: () {
-                // Add your GitHub/GitLab link here
-                // launch('https://github.com/alamy2711/world_time_app');
+              onTap: () async {
+                await Clipboard.setData(
+                  const ClipboardData(text: 'https://github.com/alamy2711/world_time.git'),
+                );
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text(
+                      'Link copied to clipboard!',
+                      style: TextStyle(color: Colors.grey[600]),
+                    ),
+                    backgroundColor: Colors.grey[200],
+                    behavior: SnackBarBehavior.floating,
+                    margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                    duration: const Duration(seconds: 2),
+                  ),
+                );
               },
             ),
             const Spacer(),
