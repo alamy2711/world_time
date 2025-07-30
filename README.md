@@ -1,16 +1,53 @@
-# world_time
+# 🌍 World Time App
 
-A new Flutter project.
+A simple Flutter app that displays the current time in different locations around the world.
 
-## Getting Started
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+- Choose from multiple world locations
+- View current time and day/night status
+- Modern UI with navigation between pages
+- Copy link to source code
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Technologies
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Flutter
+- Dart
+- REST API (`https://timezonedb.com/`)
+- Material Design
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📦 Getting Started
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/your-username/world_time_app.git
+cd world_time_app
+```
+
+2. **Install dependencies:**
+
+```bash
+flutter pub get
+```
+
+3. **Run the app:**
+
+```bash
+flutter run
+```
+
+## 🖼️ Screenshots
+
+<img src="https://img001.prntscr.com/file/img001/jSAjUUUwSoCVwMHg40pWmg.png" width="180" alt="App Screenshot">
+<img src="https://img001.prntscr.com/file/img001/yQt1GvCURz2ZI8pZIVrLMw.png" width="180" alt="App Screenshot">
+
+## 📄 License
+This project is open source and free to use.
+
+## 
+
+Developed with ❤️ by [@alamy2711](https://github.com/alamy2711)
+
+
+
