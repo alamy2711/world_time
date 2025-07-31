@@ -21,7 +21,7 @@ A simple Flutter app that displays the current time in different locations aroun
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/your-username/world_time_app.git
+git clone https://github.com/alamy2711/world_time.git
 cd world_time_app
 ```
 
